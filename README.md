@@ -2,6 +2,10 @@
 
 In this challenge, you will be creating a number guessing game!
 
+First, let's take a look at starting the project off with your group members in an effective manner:
+
+![intro](quads_week1_example.png)
+
 ### Tech: Node, Express, and JQuery
 
 ## Base Mode
