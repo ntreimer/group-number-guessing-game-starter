@@ -1,8 +1,6 @@
 # Team Random Number Guess
 
-In this challenge, you will be creating a number guessing game!
-
-First, let's take a look at starting the project off with your group members in an effective manner:
+In this challenge, you will be creating a number guessing game! You'll have plenty of time to work on this as a group. Start by spending 5 minutes reading through the requirements individually. After reading through the requirements, come together as a group and talk about what you would like to get out of the project.
 
 ![intro](quads_week1_example.png)
 
@@ -33,7 +31,7 @@ Once you get it working, style it up, yo!
 Stretch Goals:
 -
 
-See how many of these you can implement in the given time. The list below is not in any order of priority. Before attempting any of these, commit your working base mode. Remember to test when applying a feature and make sure your base mode is working! 
+The list below is not in any order of priority. Before attempting any of these, commit your working base mode. Make sure each member of your group understands what you completed for base mode! 
 
 - have the random number generator be in its own node module, look back at the Module Madness activity to do this.
 - allow for users to generate a new game with a manual min/max random number range
