@@ -2,7 +2,7 @@
 
 In this challenge, you will be creating a number guessing game! You'll have plenty of time to work on this as a group. Start by spending 5 minutes reading through the requirements individually. After reading through the requirements, come together as a group and talk about what you would like to get out of the project.
 
-![intro](quads_week1_example.png)
+![intro](quads_week1_updated.png)
 
 ### Tech: Node, Express, and JQuery
 
