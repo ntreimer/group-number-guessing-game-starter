@@ -3,6 +3,8 @@ const bodyParser = require('body-parser')
 const app = express();
 const PORT = 5000;
 
+let randomNumberGenerator = Math.floor(Math.random() * 26)
+
 // This must be added before GET & POST routes.
 app.use(bodyParser.urlencoded({extended:true}))
 
