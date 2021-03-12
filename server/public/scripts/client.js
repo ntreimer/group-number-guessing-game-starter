@@ -8,9 +8,27 @@ function displayTotalGuesses(){
 
 function handleReady() {
   console.log("jquery is loaded!");
+  // click handle events
   $('#guessButton').on('click', submitGuess);
+  $('#resetButton').on('click', resetRandomNumber)
   displayTotalGuesses();
 }
+function resetRandomNumber(){
+  // send reset request to server
+
+  // tell ajax to POST reset to server
+  $.ajax({
+    type: 'POST',
+    url: '/reset',
+    data: 'reset'
+  }).then( function(response){
+    console.log('back from server POST:', response);
+    $('#displayResults').empty()
+    totalGuesses = 0;
+  }).catch( function( err){
+    console.log('error:', err);
+  })
+}// end resetRandomeNumber
 
 function submitGuess(){
   // grab guesses from DOM
