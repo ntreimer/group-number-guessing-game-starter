@@ -1,6 +1,19 @@
 $(document).ready(handleReady);
 let totalGuesses = 0;
 
+function checkInputsUnique (){
+  let p1g = $('#p1Input').val();
+  let p2g = $('#p2Input').val();
+  let p3g = $('#p3Input').val();
+  let p4g = $('#p4Input').val();
+  if (p1g === p2g || p1g === p3g || p1g === p4g || p2g === p3g || p2g === p4g || p3g === p4g){
+    alert('Each player must select a different number!');
+  }//end if
+  else{
+    submitGuess();
+  }
+}
+
 function checkWinner(object){
   if (object.p1result === "Correct"){
     alert('PLAYER 1 IS A WINNER!!!!!!!!!!!!!!!');
@@ -24,8 +37,8 @@ function displayTotalGuesses(){
 function handleReady() {
   console.log("jquery is loaded!");
   // click handle events
-  $('#guessButton').on('click', submitGuess);
-  $('#resetButton').on('click', resetRandomNumber)
+  $('#guessButton').on('click', checkInputsUnique);
+  $('#resetButton').on('click', resetRandomNumber);
   displayTotalGuesses();
 }
 function resetRandomNumber(){

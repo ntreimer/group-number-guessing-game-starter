@@ -6,6 +6,7 @@ button {
     font-size: 16px;
     border-radius: 10px;
     padding: 15px 32px;
+    font-family: Helvetica;
 }
 
 body {
@@ -15,10 +16,23 @@ body {
     background-color: #F0EADB;
     border: none;
     border-radius: 15px;
+    padding: 25px 30px;
 }
 input {
     border: none;
     padding: 5px 24px;
     border-top-right-radius: 5px;
-    border-bot
+    border-bottom-right-radius: 5px;
+}
+label {
+    background-color: #09382F;
+    font-family: Helvetica;
+
+}
+
+#title {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-family: Helvetica;
 }
