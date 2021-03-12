@@ -1,8 +1,15 @@
 $(document).ready(handleReady);
+let totalGuesses = 0;
+
+function displayTotalGuesses(){
+  $('#totalGuessArea').empty();
+  $('#totalGuessArea').append(`<h3>Total Guesses: ${totalGuesses}</h3>`);
+}//end displayTotalGuesses
 
 function handleReady() {
   console.log("jquery is loaded!");
   $('#guessButton').on('click', submitGuess);
+  displayTotalGuesses();
 }
 
 function submitGuess(){
@@ -14,7 +21,10 @@ function submitGuess(){
     p3Guess: $('#p3Input').val(),
     p4Guess: $('#p4Input').val()
   }
-
+  //increase total guesses
+  totalGuesses++;
+  //display total guesses
+  displayTotalGuesses();
   // tell ajax to POST guesses to /guess
   $.ajax({
     type: 'POST',
@@ -40,3 +50,5 @@ $.ajax({
 
 })
 };// end getGuess
+
+function
