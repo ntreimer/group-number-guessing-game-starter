@@ -1,6 +1,21 @@
 $(document).ready(handleReady);
 let totalGuesses = 0;
 
+function checkWinner(object){
+  if (object.p1result === "Correct"){
+    alert('PLAYER 1 IS A WINNER!!!!!!!!!!!!!!!');
+  }
+  else if (object.p2result === "Correct"){
+    alert('PLAYER 2 IS A WINNER!!!!!!!!!!!!!!!');
+  }
+  else if (object.p3result === "Correct"){
+    alert('PLAYER 3 IS A WINNER!!!!!!!!!!!!!!!');
+  }
+  else if (object.p4result === "Correct"){
+    alert('PLAYER 4 IS A WINNER!!!!!!!!!!!!!!!');
+  }
+}//end checkWinner
+
 function displayTotalGuesses(){
   $('#totalGuessArea').empty();
   $('#totalGuessArea').append(`<h3>Total Guesses: ${totalGuesses}</h3>`);
@@ -63,6 +78,7 @@ $.ajax({
 }).then( function(response){
   //response will be from server
   displayResults(response);
+  checkWinner(response);
 }).catch( function(err){
   console.log( 'error:', err );
 
@@ -73,10 +89,10 @@ function displayResults( object ){
     $('#displayResults').empty();
     
     $( '#displayResults' ).append(`
-      Player 1: ${object.p1result} 
-      Player 2: ${object.p2result}
-      Player 3: ${object.p3result}
-      Player 4: ${object.p4result}
+      <h3>Player 1:</h3> ${object.p1result} 
+      <h3>Player 2:</h3> ${object.p2result}
+      <h3>Player 3:</h3> ${object.p3result}
+      <h3>Player 4:</h3> ${object.p4result}
     `)
 
 }// end displayResults

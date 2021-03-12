@@ -4,6 +4,21 @@ button {
     color: white;
     text-align: center;
     font-size: 16px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 15px 32px;
+}
+
+body {
+    background-color: #C99910;
+}
+#gameInt {
+    background-color: #F0EADB;
+    border: none;
+    border-radius: 15px;
+}
+input {
+    border: none;
+    padding: 5px 24px;
+    border-top-right-radius: 5px;
+    border-bot
 }

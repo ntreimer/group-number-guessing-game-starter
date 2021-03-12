@@ -15,7 +15,7 @@ You should generate a random number between 1 and 25 on the server. Add input fi
 [x] total guesses made indicator (think of this as rounds in a game)
 [x] details area for the history of guesses for each player (tell them if their last guess was too low or too high)
 [x] if a guess is correct PROMINENTLY Display which player won (make 'em FEEL it)
-[] if there is a winner, a restart button that tells the server to select a new random number (POST)
+[x] if there is a winner, a restart button that tells the server to select a new random number (POST)
 
 Necessary Ingredients
 -
