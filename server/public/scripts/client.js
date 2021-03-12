@@ -44,11 +44,21 @@ $.ajax({
   url: '/guess'
 }).then( function(response){
   //response will be from server
-  console.log(response);
-}).catch( function (err){
-  console.log( err );
+  displayResults(response);
+}).catch( function(err){
+  console.log( 'error:', err );
 
 })
 };
 
-function
+function displayResults( object ){
+    $('#displayResults').empty();
+    
+    $( '#displayResults' ).append(`
+      Player 1: ${object.p1result} 
+      Player 2: ${object.p2result}
+      Player 3: ${object.p3result}
+      Player 4: ${object.p4result}
+    `)
+
+}// end displayResults
