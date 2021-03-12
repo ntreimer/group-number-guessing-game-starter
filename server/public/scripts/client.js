@@ -49,6 +49,6 @@ $.ajax({
   console.log( err );
 
 })
-};// end getGuess
+};
 
 function
